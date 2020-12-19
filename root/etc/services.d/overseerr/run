@@ -7,8 +7,10 @@ HOME="${APP_DIR}" && export HOME
 
 redirect_cmd() {
     if [[ "${DEBUG}" == "yes" ]]; then
+        LOG_LEVEL="debug" && export LOG_LEVEL
         "$@"
     else
+        LOG_LEVEL="info" && export LOG_LEVEL
         "$@" > /dev/null 2>&1
     fi
 }
