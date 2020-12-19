@@ -1,5 +1,5 @@
 FROM node:12.18-alpine AS builder
-RUN apk add --no-cache curl python3
+RUN apk add --no-cache curl python3 build-base
 ARG VERSION
 RUN mkdir /build && \
     curl -fsSL "https://github.com/sct/overseerr/archive/v${VERSION}.tar.gz" | tar xzf - -C "/build" --strip-components=1 && \
