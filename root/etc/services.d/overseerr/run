@@ -3,6 +3,9 @@
 
 umask "${UMASK}"
 
+HOME="${APP_DIR}"      && export HOME
+NEXT_TELEMETRY_DEBUG=1 && export NEXT_TELEMETRY_DEBUG
+
 redirect_cmd() {
     if [[ "${DEBUG}" == "yes" ]]; then
         "$@"
