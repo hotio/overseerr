@@ -72,8 +72,8 @@ jobs:
           push: true
           platforms: ${{ steps.prep.outputs.platform }}
           file: ./${{ matrix.architecture }}.Dockerfile
-          cache-from: ${{ steps.prep.outputs.cache }}
-          cache-to: ${{ steps.prep.outputs.cache }}
+          cache-from: ghcr.io/${{ steps.prep.outputs.cache }}
+          cache-to: ghcr.io/${{ steps.prep.outputs.cache }}
           tags: |
             ${{ steps.prep.outputs.tag }}
             ghcr.io/${{ steps.prep.outputs.tag }}
