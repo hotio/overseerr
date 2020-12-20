@@ -13,7 +13,7 @@ FROM ghcr.io/hotio/base@sha256:f9b216e4d1e5dddef8dd0dbe0cbd42ff017076980024d2f71
 
 EXPOSE 5055
 
-RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community yarn
+RUN apk add --no-cache yarn
 
 COPY --from=builder /build/dist "${APP_DIR}/dist"
 COPY --from=builder /build/.next "${APP_DIR}/.next"

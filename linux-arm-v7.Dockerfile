@@ -9,7 +9,7 @@ RUN mkdir /build && \
     yarn install --production --ignore-scripts --prefer-offline && \
     yarn cache clean
 
-FROM ghcr.io/hotio/base@sha256:76ee24b5c0268e712fbbfdb095b9be39de1cfce115085888cd3b7fa422f70c28
+FROM ghcr.io/hotio/base@sha256:82a916191ff569cb247ee6895beac151cb867e518b932f7105c0ef9c560dfbae
 
 EXPOSE 5055
 
