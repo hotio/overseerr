@@ -1,5 +1,5 @@
 FROM node:12.18-alpine AS builder
-RUN apk add --no-cache curl
+RUN apk add --no-cache curl build-base python3 python2 sqlite
 ARG VERSION
 RUN mkdir /build && \
     curl -fsSL "https://github.com/sct/overseerr/archive/v${VERSION}.tar.gz" | tar xzf - -C "/build" --strip-components=1 && \
@@ -9,7 +9,7 @@ RUN mkdir /build && \
     yarn install --production --ignore-scripts --prefer-offline && \
     yarn cache clean
 
-FROM ghcr.io/hotio/base@sha256:f9b216e4d1e5dddef8dd0dbe0cbd42ff017076980024d2f716c47e91ce180758
+FROM ghcr.io/hotio/base@sha256:76ee24b5c0268e712fbbfdb095b9be39de1cfce115085888cd3b7fa422f70c28
 
 EXPOSE 5055
 
