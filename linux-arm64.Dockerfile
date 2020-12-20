@@ -1,5 +1,6 @@
 FROM node:12.18-alpine AS builder
-RUN apk add --no-cache curl build-base python3 sqlite
+RUN apk add --no-cache curl build-base python3 sqlite vips-dev
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community python2
 ARG VERSION
 RUN mkdir /build && \
     curl -fsSL "https://github.com/sct/overseerr/archive/${VERSION}.tar.gz" | tar xzf - -C "/build" --strip-components=1 && \
