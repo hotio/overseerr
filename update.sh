@@ -30,7 +30,6 @@ elif [[ ${1} == "screenshot" ]]; then
 else
     version=$(curl -u "${GITHUB_ACTOR}:${GITHUB_TOKEN}" -fsSL "https://api.github.com/repos/sct/overseerr/commits/develop" | jq -r .sha)
     [[ -z ${version} ]] && exit 1
-    old_version=$(jq -r '.version' < VERSION.json)
-    [[ "${old_version}" == "${version}" ]] && exit 0
-    echo '{"version":"'"${version}"'","changelog":"https://github.com/sct/overseerr/compare/'"${old_version}"'...'"${version}"'"}' | jq . > VERSION.json
+    echo '{"version":"'"${version}"'"}' | jq . > VERSION.json
+    echo "##[set-output name=version;]${version}"
 fi
