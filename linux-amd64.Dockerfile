@@ -1,6 +1,7 @@
 FROM node:12.18-alpine AS builder
 RUN apk add --no-cache curl
 ARG VERSION
+ENV COMMIT_TAG=${VERSION}
 RUN mkdir /build && \
     curl -fsSL "https://github.com/sct/overseerr/archive/${VERSION}.tar.gz" | tar xzf - -C "/build" --strip-components=1 && \
     cd /build && \
