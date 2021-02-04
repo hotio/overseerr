@@ -5,16 +5,6 @@ umask "${UMASK}"
 
 HOME="${APP_DIR}" && export HOME
 
-redirect_cmd() {
-    if [[ "${DEBUG}" == "yes" ]]; then
-        LOG_LEVEL="debug" && export LOG_LEVEL
-        "$@"
-    else
-        LOG_LEVEL="info" && export LOG_LEVEL
-        "$@" > /dev/null 2>&1
-    fi
-}
-
 cd "${APP_DIR}" || exit 1
 # shellcheck disable=SC2086
-redirect_cmd exec s6-setuidgid hotio yarn start ${ARGS}
+exec s6-setuidgid hotio yarn start ${ARGS}
