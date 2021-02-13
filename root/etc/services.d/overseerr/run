@@ -6,5 +6,4 @@ umask "${UMASK}"
 HOME="${APP_DIR}" && export HOME
 
 cd "${APP_DIR}" || exit 1
-# shellcheck disable=SC2086
-exec s6-setuidgid hotio yarn start ${ARGS}
+exec s6-setuidgid hotio yarn start
