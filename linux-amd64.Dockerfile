@@ -1,4 +1,4 @@
-FROM node:12.18-alpine AS builder
+FROM node:14.17-alpine AS builder
 RUN apk add --no-cache curl
 ARG VERSION
 ENV COMMIT_TAG=${VERSION}
