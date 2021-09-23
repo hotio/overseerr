@@ -5,7 +5,7 @@ ENV COMMIT_TAG=${VERSION}
 RUN mkdir /build && \
     curl -fsSL "https://github.com/sct/overseerr/archive/${VERSION}.tar.gz" | tar xzf - -C "/build" --strip-components=1 && \
     cd /build && \
-    yarn --frozen-lockfile && \
+    yarn --frozen-lockfile --network-timeout 1000000 && \
     yarn build && \
     yarn install --production --ignore-scripts --prefer-offline && \
     yarn cache clean
