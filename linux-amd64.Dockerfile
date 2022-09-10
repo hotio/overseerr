@@ -27,3 +27,4 @@ RUN curl -fsSL "https://github.com/sct/overseerr/archive/v${VERSION}.tar.gz" | t
     chmod -R u=rwX,go=rX "${APP_DIR}"
 
 COPY root/ /
+RUN chmod -R +x /etc/cont-init.d/ /etc/services.d/
