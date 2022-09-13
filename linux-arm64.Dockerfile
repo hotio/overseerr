@@ -1,3 +1,6 @@
+ARG UPSTREAM_IMAGE
+ARG UPSTREAM_DIGEST_ARM64
+
 FROM node:14.17-alpine AS builder
 RUN apk add --no-cache curl build-base python3 python2 sqlite
 ARG VERSION
@@ -10,7 +13,8 @@ RUN mkdir /build && \
     yarn install --production --ignore-scripts --prefer-offline && \
     yarn cache clean
 
-FROM cr.hotio.dev/hotio/base@sha256:32f7802fe9903727645618677d0109a2da34a6d2efbc494f3afae50fdb7b2dd2
+
+FROM ${UPSTREAM_IMAGE}@${UPSTREAM_DIGEST_ARM64}
 
 EXPOSE 5055
 
