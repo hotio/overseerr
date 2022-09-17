@@ -1,6 +1,6 @@
 {
-  "version": "5c01313cc4c8277de398124848b4481a2b0080b3",
-  "changelog": "https://github.com/sct/overseerr/compare/d8da5cbe9d0700e02cbece70caf9103bc5376505...5c01313cc4c8277de398124848b4481a2b0080b3",
+  "version": "407af32d32a30d23ee14a9ff763cb4aa582d3ede",
+  "changelog": "https://github.com/sct/overseerr/compare/5c01313cc4c8277de398124848b4481a2b0080b3...407af32d32a30d23ee14a9ff763cb4aa582d3ede",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:7fb1409bac0085160b4cd32c20e08946e2caec104da84a6d1a582bdbbef77eb1",
