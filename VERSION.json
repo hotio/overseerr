@@ -1,4 +1,5 @@
 {
+  "description": "Releases",
   "version": "1.30.0",
   "changelog": "https://github.com/sct/overseerr/compare/v1.29.1...v1.30.0",
   "upstream_image": "cr.hotio.dev/hotio/base",
