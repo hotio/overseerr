@@ -1,8 +1,8 @@
 {
   "latest": true,
   "description": "Releases",
-  "version": "1.30.1",
-  "changelog": "https://github.com/sct/overseerr/compare/v1.30.0...v1.30.1",
+  "version": "1.31.0",
+  "changelog": "https://github.com/sct/overseerr/compare/v1.30.1...v1.31.0",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:4ce5b110e46d00c5013ade1600e7afd66e272539194aae0a31fa486b6a4e8527",
