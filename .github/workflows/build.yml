@@ -371,3 +371,4 @@ jobs:
           if [[ -n ${EXTRA_DISCORD_WEBHOOK} ]]; then
             curl -fsSL --retry 5 -H "Content-Type: multipart/form-data" -F "file=@screenshot.png" -F "payload_json=${json}" "${EXTRA_DISCORD_WEBHOOK}" > /dev/null
           fi
+
