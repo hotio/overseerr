@@ -2,7 +2,7 @@ ARG UPSTREAM_IMAGE
 ARG UPSTREAM_DIGEST_ARM64
 
 FROM node:16.17-alpine AS builder
-RUN apk add --no-cache curl build-base python3 python2 sqlite
+RUN apk add --no-cache curl build-base python3 sqlite
 ARG VERSION
 ENV COMMIT_TAG=${VERSION}
 RUN mkdir /build && \
