@@ -1,14 +1,14 @@
 ARG UPSTREAM_IMAGE
 ARG UPSTREAM_DIGEST_ARM64
 
-FROM node:14.17-alpine AS builder
-RUN apk add --no-cache curl build-base python3 python2 sqlite
+FROM node:16.17-alpine AS builder
+RUN apk add --no-cache curl build-base python3 sqlite
 ARG VERSION
 ENV COMMIT_TAG=${VERSION}
 RUN mkdir /build && \
     curl -fsSL "https://github.com/sct/overseerr/archive/v${VERSION}.tar.gz" | tar xzf - -C "/build" --strip-components=1 && \
     cd /build && \
-    yarn --frozen-lockfile --network-timeout 1000000 && \
+    CYPRESS_INSTALL_BINARY=0 yarn --frozen-lockfile --network-timeout 1000000 && \
     yarn build && \
     yarn install --production --ignore-scripts --prefer-offline && \
     yarn cache clean
