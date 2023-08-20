@@ -1,7 +1,7 @@
 ARG UPSTREAM_IMAGE
 ARG UPSTREAM_DIGEST_AMD64
 
-FROM node:14.17-alpine AS builder
+FROM node:16.17-alpine AS builder
 RUN apk add --no-cache curl
 ARG VERSION
 ENV COMMIT_TAG=${VERSION}
