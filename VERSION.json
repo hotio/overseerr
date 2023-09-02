@@ -2,7 +2,7 @@
   "description": "Every commit to develop",
   "version": "c484810f965f8d04643c25c6d283dd83f4bd4a23",
   "changelog": "https://github.com/sct/overseerr/compare/0c39057ca58743697e9dcc3b678440ac3688c65a...c484810f965f8d04643c25c6d283dd83f4bd4a23",
-  "upstream_image": "cr.hotio.dev/hotio/base",
+  "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:db84a4b9b34cfbb55e4f585cd81bf51e6bd7c6ef2d3901b7ff8ad3e9a345af61",
   "upstream_digest_arm64": "sha256:5fcf8696aa5b1cce60eeca85f1fcc33b023dccc1413eb5cc4d16793b608d8f64",
