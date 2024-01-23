@@ -16,7 +16,6 @@ RUN mkdir /build && \
 
 FROM ${UPSTREAM_IMAGE}@${UPSTREAM_DIGEST_ARM64}
 EXPOSE 5055
-VOLUME ["${CONFIG_DIR}"]
 
 RUN apk add --no-cache yarn
 
