@@ -1,12 +1,12 @@
 {
-  "description": "Every commit to develop",
-  "version": "8251c73ffae678c89eae2de13ee2e9a0afb8d755",
   "changelog": "https://github.com/sct/overseerr/compare/be047427df62e480fc9b69cb93258837ed72bcf4...8251c73ffae678c89eae2de13ee2e9a0afb8d755",
-  "upstream_image": "ghcr.io/hotio/base",
-  "upstream_tag": "alpinevpn",
+  "description": "Every commit to develop",
+  "test_amd64": true,
+  "test_arm64": true,
+  "test_url": "http://localhost:5055",
   "upstream_digest_amd64": "sha256:cfee33d5f5c24786c2f8913e848513c62b9c0fb06cbb86fb97118718938e7ceb",
   "upstream_digest_arm64": "sha256:5187c6bc4300e2dab15540733d1e0d1ac8fb8e289472bb5221ff42bc7d38aa2a",
-  "test_url": "http://localhost:5055",
-  "test_amd64": true,
-  "test_arm64": true
+  "upstream_image": "ghcr.io/hotio/base",
+  "upstream_tag": "alpinevpn",
+  "version": "2dd00481c2df969731e8215865f662bce771489d"
 }
