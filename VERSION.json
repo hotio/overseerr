@@ -1,5 +1,4 @@
 {
-  "changelog": "https://github.com/sct/overseerr/compare/be047427df62e480fc9b69cb93258837ed72bcf4...8251c73ffae678c89eae2de13ee2e9a0afb8d755",
   "description": "Every commit to develop",
   "test_amd64": true,
   "test_arm64": true,
