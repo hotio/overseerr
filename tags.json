@@ -14,13 +14,13 @@
   "release": {
     "description": "Releases",
     "hide": false,
-    "last_updated": "2025-01-18T09:08:14.000Z",
-    "last_updated_url": "https://github.com/hotio/overseerr/actions/runs/12842618184",
+    "last_updated": "2025-02-14T21:33:04.000Z",
+    "last_updated_url": "https://github.com/hotio/overseerr/actions/runs/13337667071",
     "latest": true,
     "tags": [
       "release",
       "release-1.33.2",
-      "release-6bfd9ac"
+      "release-e282fd6"
     ]
   }
 }
