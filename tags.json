@@ -1,15 +1,16 @@
 {
   "nightly": {
     "commit_message": "Upstream image update",
+    "commit_sha": "e75542284a3d6575994967cd8fe7a714da68487f",
     "description": "Every commit to develop",
     "hide": false,
-    "last_updated": "2026-01-04T09:26:08.000Z",
-    "last_updated_url": "https://github.com/hotio/overseerr/actions/runs/20690829115",
+    "last_updated": "2026-01-07T03:57:31.000Z",
+    "last_updated_url": "https://github.com/hotio/overseerr/actions/runs/20770101802",
     "latest": false,
     "tags": [
       "nightly",
       "nightly-5ef098f6d844dde6d5d9076c8814e9a34bd73451",
-      "nightly-f442286",
+      "nightly-e755422",
       "",
       "",
       ""
